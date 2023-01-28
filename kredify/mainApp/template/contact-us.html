@@ -1,0 +1,83 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block title %}
+<title>Kredify | Contact Us</title>
+{% endblock %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-6 col-12 p-5">
+            <h2 class="heading">Curious to know more?</h2>
+            <p class="contact-text">The customer who have any issues with the company operating fashion or with any
+                individual working with the company he/she can raise a complaint any time from 9:30 AM to 6:30 PM by:
+            </p>
+            <hr>
+            <h3 class="text-danger">Get In Touch</h3>
+            <p class="contact-text">Writing us at info@kredify.org
+                Calling us at +91-8587858604
+                Sending a written complaint at
+                LG – 171, Gaur City Center
+                Gaur Chowk
+                Greater Noida West – 201305</p>
+            <hr>
+            <p class="contact-text">In case, the complaint does not get resolve at within the 7 working days or the
+                customer/end user is not satisfied with the resolution provided the customer may reach out to our nodal
+                officer by writing a mail at <span class="email-hover text-danger">admin@kredify.org</span> and <span
+                    class="email-hover text-danger">backoffice@shivakarifinance.co.in</span></p>
+            <hr>
+
+        </div>
+        <div class="col-xl-6 col-12 p-5">
+            <h2>Fill in the form with your query</h2>
+            <form method="post" action="">
+                {% csrf_token %}
+                <div class="container-fluid mb-5">
+                    <div class="row">
+                        <div class="col-xl-6 col-12">
+                            <div class="mb-3">
+                                <label class="form-label"><b>Name</b> <span class="formLabel"> (Required)</span></label>
+                                <input type="text" class="form-control" name="first_name"
+                                    placeholder="Enter First Name">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-12">
+                            <div class="mb-3 mt-2">
+                                <label class="form-label"></label>
+                                <input type="text" class="form-control" name="last_name" placeholder="Enter Last Name">
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-6 col-12">
+                            <div class="mb-3">
+                                <label class="form-label"><b>Phone</b> <span class="formLabel">
+                                        (Required)</span></label>
+                                <input type="text" class="form-control" name="phone" placeholder="Enter Phone Number">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-12">
+                            <div class="mb-3">
+                                <label class="form-label"><b>Email</b> <span class="formLabel">
+                                        (Required)</span></label>
+                                <input type="email" class="form-control" name="email" placeholder="Enter Email Address">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label"><b>Query</b><span class="formLabel"> (Required)</span></label>
+                        <textarea class="form-control" rows="10" name="description"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+        </div>
+    </div>
+    </form>
+</div>
+</div>
+</div>
+
+{% endblock %}

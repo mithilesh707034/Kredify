@@ -1,0 +1,137 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block title %}
+<title>Kredify | Apply Now</title>
+{% endblock %}
+{% block content %}
+<h1 class="heading text-center">Apply Now</h1>
+<p class="about-text text-center">Apply for an online loan at low interest rates and get instant approval.</p>
+
+<!-- Apply For Loan Form start Here-->
+<div class="container-fluid">
+    <form method="post" action="">
+        {% csrf_token %}
+        <div class="container-fluid">
+            <div class="container-fluid mb-5">
+                <div class="row">
+                    <div class="col-xl-6 col-12">
+                        <div class="mb-3">
+                            <label class="form-label"><b>First Name</b> <span class="formLabel"> *</span></label>
+                            <input type="text" class="form-control" name="first_name" placeholder="Enter First Name">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-12">
+                        <div class="mb-3">
+                            <label class="form-label"><b>Last Name</b> <span class="formLabel">*</span></label>
+                            <input type="text" class="form-control" name="last_name" placeholder="Enter Last Name">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-6 col-12">
+                        <div class="mb-3">
+                            <label class="form-label"><b>Employment</b> <span class="formLabel">
+                                    *</span></label>
+                            <div class="input-group">
+                                <select class="form-select" name="employment"
+                                    aria-label="Example select with button addon">
+                                    <option selected value="Salaried">Salaried</option>
+                                    <option value="Self-Employeed">Self-Employeed</option>
+                                    <option value="UnEmployeed">UnEmployeed</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-12">
+                        <div class="mb-3">
+                            <label class="form-label"><b>Company Name</b> <span class="formLabel">
+                                    *</span></label>
+                            <input type="text" class="form-control" name="company_name"
+                                placeholder="Enter Company Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-12">
+                        <div class="mb-3">
+                            <label class="form-label"><b>Email</b> <span class="formLabel">*</span></label>
+                            <input type="email" class="form-control" name="email" placeholder="Enter Email Address">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-12">
+                        <div class="mb-3 w-100">
+                            <label class="form-label"><b>Contact</b> <span class="formLabel">*</span></label>
+                            <input type="text" class="form-control" name="phone" placeholder="Enter Contact Number">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-6 col-12">
+                        <div class="mb-3">
+                            <label class="form-label"><b>Salary</b> <span class="formLabel">
+                                    *</span></label>
+                            <input type="number" class="form-control" name="salary" placeholder="Enter Your Salary">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-12">
+                        <div class="mb-3">
+                            <label class="form-label"><b>Loan Type</b> <span class="formLabel">
+                                    *</span></label>
+                            <div class="input-group">
+                                <select class="form-select" name="loan_type"
+                                    aria-label="Example select with button addon">
+                                    <option selected value="Advance Salary Loan">Advance Salary Loan</option>
+                                    <option value="Personal Loan">Personal Loan</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-12">
+                        <label class="form-label"><b>Aadhar Card</b> <span class="formLabel">
+                                *</span></label>
+                        <div class="documentClass text-center ">
+                            <label class="form-label">Drop files here or</label><br>
+                            <input type="file" name="aadhar_card">
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-12">
+                        <label class="form-label"><b>PAN Card</b> <span class="formLabel">
+                                *</span></label>
+                        <div class="documentClass text-center ">
+                            <label class="form-label">Drop files here or</label><br>
+                            <input type="file" name="pan_card">
+                        </div>
+                    </div>
+                </div><br>
+                <div class="row mt-5">
+                    <div class="col-xl-6 col-12"><br>
+                        <label class="form-label"><b>Salary Sleep</b> <span class="formLabel">
+                                *</span></label>
+                        <div class="documentClass text-center ">
+                            <label class="form-label">Drop files here or</label><br>
+                            <input type="file" name="salary_sleep">
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-12">
+                        <br>
+                        <label class="form-label"><b>Photo</b> <span class="formLabel">
+                                *</span></label>
+                        <div class="documentClass text-center ">
+                            <label class="form-label">Drop files here or</label><br>
+                            <input type="file" name="photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn loanbtn">Submit</button>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

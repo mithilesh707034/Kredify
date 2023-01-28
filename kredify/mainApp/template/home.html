@@ -1,0 +1,309 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% block title %}
+  <title>Kredify</title>
+  {% endblock %}
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+
+<!-- Header -->
+<div class="container-fluid navitem">
+  <ul>
+    <li class="text-light">+91 7009679903</li>
+    <li class="text-light">mkm707034@gmail.com</li>
+    <li><a href='#'><img src="{% static 'images/facebook.png' %}" height="30px" width="30" px></a></li>
+    <li><a href='#'><img src="{% static 'images/instagram1.png' %}" height="30px" width="30" px></a></li>
+    <li><a href='#'><img src="{% static 'images/twitter.png' %}" height="30px" width="30" px></a></li>
+    <li><a href='#'><img src="{% static 'images/linkedin.png' %}" height="30px" width="30" px></a></li>
+  </ul>
+</div>
+<!-- NavBar -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xl-6 col-12">
+      <img class="logo" src="{% static 'images/logo2.jpg' %}" height="50px" width="100px" alt="Logo">
+    </div>
+    <div class="col-xl-6 col-12">
+      <nav class="navbar navbar-expand-lg bg-white">
+        <button class="navbar-toggler toggle" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 list">
+            <li class="nav-item">
+              <a class="nav-link active text-danger menue-hover" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-danger menue-hover" href="/about">About</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-danger menue-hover" href="/loan-services">Loan Services</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-danger menue-hover" href="/apply-now">Apply Now</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link btn btn-danger text-light" href="/contact-us">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+    </nav>
+  </div>
+</div>
+</div>
+
+{% block content %}
+
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-xl-6  col-12">
+      <h2 class="heading">Moving together towards your financial wellness!</h2>
+      <h5>We believe in your dreams & goals. </h5>
+      <a href="/apply-now" class="btn btn-danger text-light mt-5 p-3 ">Apply Now</a>
+    </div>
+    <div class="col-xl-6 col-12">
+      <img src="{% static 'images/img4.png'%}" height="100%" width="95%" alt="">
+    </div>
+
+  </div>
+  <div class="row mt-5">
+    <div class="col-xl-6  col-12 p-5">
+      <img src="{% static 'images/image2.png' %}" height="100%" width="95%" alt="">
+    </div>
+    <div class="col-xl-6 col-12 mt-5">
+      <h2 class="heading">Partnering In Your Passion</h2>
+      <p class="about-text">Inspiring millions of dreams and aspirations, Kredify continues to lead with the brand
+        legacy of trust, integrity, transparency and excellence. With this commitment, we have dedicated ourselves to
+        serve our valued customers the best of offerings.
+
+        Our specially curated suite of loan offerings and services are uniquely designed to empower every customer to
+        accomplish their new milestones with ease.</p>
+    </div>
+
+  </div>
+</div>
+<h2 class="heading text-dark text-center">Our Unique Offerings</h2>
+<p class="about-text text-center">Explore our suite of customized solutions for your every financial need.</p>
+<!-- clear -->
+<div class="container-fluid">
+  <div class="row mt-5">
+    <div class="col-xl-6  col-12 p-5">
+      <img src="{% static 'images/advance.png' %}" height="50px" width="50px" alt="">
+      <span class="footer-list text-danger menue-hover">Advance Salary Loan</span>
+      <p class="about-text">Delay in receiving your salary? Finding it difficult to manage your emergency or your month
+        end expenses like credit card bill payment, rent payment, any medical emergency, avoiding cheque bounces?
+        Kredify is here for you. You are just few clicks away from solving any of these problems in a secured manner. We
+        tend to keep our advancing terms within your reach to cater your needs when you look up to us.<br>
+        <a class="text-decoration-none text-danger" href="/apply-now"> Learn More <span
+            class="material-symbols-outlined p-3">
+            arrow_right_alt </span></a>
+      </p>
+
+    </div>
+
+
+    <div class="col-xl-6 col-12 mt-5">
+      <img src="{% static 'images/personal.png' %}" height="50px" width="50px" alt="">
+      <span class="footer-list text-danger menue-hover">Personal Loan</span>
+      <p class="about-text">Paper work, routine walk ins and a long time, the procedures you come across while applying
+        even for a short term personal loan makes you reluctant to the borrowing system. Kredify ensures to lend you
+        required funds. Our real time system enables our clients to avail ample funds by agreeing to our reasonable and
+        transparent terms and conditions.<br>
+        <a class="text-decoration-none text-danger" href="/apply-now"> Learn More <span
+            class="material-symbols-outlined p-3">
+            arrow_right_alt </span></a>
+      </p>
+
+    </div>
+
+  </div>
+</div>
+<!-- Clear  -->
+
+<img src="{% static 'images/image3.png' %}" height="100%" width="100%" alt="">
+</div>
+<h2 class="text-center ">Happy <span class="text-danger">Borrowing</span></h2>
+<h2 class="text-center ">Someone like you is happy with Kredify
+</h2>
+
+<div class="container-fluid px-5 mt-5">
+  <div class="row">
+    <div class="col-xl-4 col-md-6 col-12">
+
+      <div class="reviews">
+        <p class="text-center">&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+        <p class="about-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut repellat exercitationem
+          voluptat repellat exercitationem voluptat</p>
+        <h4 class="text-center">Mithilesh</h4>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6 col-12">
+      <div class="reviews">
+        <p class="text-center">&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+        <p class="about-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut repellat exercitationem
+          voluptat repellat exercitationem voluptat</p>
+        <h4 class="text-center">Deepak</h4>
+      </div>
+
+    </div>
+    <div class="col-xl-4 col-md-6 col-12">
+
+      <div class="reviews">
+        <p class="text-center">&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+        <p class="about-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut repellat exercitationem
+          voluptat repellat exercitationem voluptat</p>
+        <h4 class="text-center">Rohit</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Clear In Mobile -->
+{% endblock %}
+<!-- Footer Section -->
+<footer class="footer-menue">
+  <div class="container-fluid px-5 mt-5">
+    <div class="row">
+      <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+        <ul class="navbar-nav">
+          <img src="{% static 'images/logo2.jpg' %}" height="100px" width="250px" alt="Logo"><br>
+          <li class="nav-item list-text">
+            Kredify is a new-age digital lending platform that leverages state-of-the-art technology and data sciences
+            to facilitate a safe and hassle-free means for borrowing money.
+            <br><br>
+            <h5> NBFC alliance Name</h5>
+            <br>
+            Shivakari Finance Private limited
+          </li>
+        </ul>
+        <!-- social Media Link below -->
+        <div class="social mt-3">
+          <ul class="social-media-container">
+            <li class="nav-item mx-1">
+              <a class="nav-link " href="#"> <img class="social-account" src="{% static 'images/facebook.png' %}"
+                  height="30px" width="30px" alt="Logo"></a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link " href="#"> <img class="social-account" src="{% static 'images/instagram.png' %}"
+                  height="30px" width="30px" alt="Logo"></a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link  " href="#"> <img class="social-account" src="{% static 'images/twitter.png' %}"
+                  height="30px" width="30px" alt="Logo"></a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link " href="#"> <img class="social-account" src="{% static 'images/linkedin.png' %}"
+                  height="30px" width="30px" alt="Logo"></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+        <div class="footer-list">Quick Link</div>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link  list-color" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  list-color" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  list-color" href="/loan-services">Loan Services</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link list-color " href="/apply-now">Apply Now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  list-color" href="#">Quick Pay</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link list-color" href="#">FAQs</a>
+          </li>
+
+
+
+      </div>
+      <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+        <div class="footer-list">Quick Pay</div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link  list-color" href="#">Pay EMI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  list-color" href="#">Mandate cancellation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  list-color" href="#">NEFT/RTGS Details</a>
+          </li>
+          <h5>Customer Service</h5>
+          <li class="nav-item ">
+            <a class="nav-link list-color " href="#">Cash Receipts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  list-color" href="#">Grievance Redressal Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link list-color" href="#">Terms and Conditions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link list-color" href="#">Privacy Policy</a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+        <div class="footer-list"> Careers</div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link  list-color" href="#">Why Kredify</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  list-color" href="#">Job Application</a>
+          </li>
+          <h4>Curious?</h4>
+          <li class="nav-item">
+            <a class="nav-link  list-color" href="#">Write to us</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link list-color " href="#">For general queries:</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link   text-danger email-hover" href="mailto:info@kredify.org">info@kredify.org</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link list-color" href="#">For Grievances Redressal:</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-danger email-hover" href="mailto:admin@kredify.org">admin@kredify.org</a>
+          </li>
+          <li>Speak to our regional manager:<br>
+            +91-7009679903</li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="copyright-container py-4">
+  ©2022, All Rights Reserved Mithilesh
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+
+</html>

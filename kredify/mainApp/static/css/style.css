@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+}
+ul{
+    list-style: none;
+    display: flex;
+    color: rgb(7, 6, 6);
+    width: 100%;
+    justify-content: space-between;
+}
+.loanbtn{
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 45%;
+}
+
+
+.navitem{
+    background-color:rgb(206, 46, 46) ;
+}
+.list{
+    color:red;
+}   
+.toggle{
+position: absolute; 
+right:20px;
+top:-40px;
+}
+.menue-hover:hover{
+    color:black !important;
+}
+.list-color:hover{
+    color:red !important;
+}
+.email-hover:hover{
+    color: blue !important;;
+}
+.list-text{
+    text-align: justify;
+    width:80%;
+}
+.footer-list{
+    font-size:25px;
+    font-weight: bold;
+}
+.footer-menue{
+    margin-top:200px;
+}
+.social-media-container{
+    list-style-type: none;
+    display: flex;
+   
+}
+.social-account{
+border-radius: 50%;
+}
+.social{
+    margin-left: -45px;
+
+}
+.social-account:hover{
+    background-color: rgb(147, 126, 126);
+}
+.copyright-container{
+    background-color: rgb(130, 9, 9);
+    color:white;
+    text-align: center;
+}
+.heading{
+    color:rgb(189, 29, 29) !important;
+    font-weight: bold;
+    font-size: 55px;
+}
+.contact-text{
+    width:90%;
+    text-align: justify;
+}
+.formLabel{
+    color:rgb(185, 32, 32);
+}
+.btn{
+    color:red;
+    border: 1px solid red;
+}
+.btn:hover{
+    background-color: rgb(192, 37, 37);
+    color:white;
+}
+
+.about-heading{
+    height:300px;
+    background-image: radial-gradient(rgb(216, 57, 57), rgb(188, 41, 41), rgb(219, 188, 166));
+    border-radius: 5%;
+    padding: 5px;
+    margin:20px 5px 200px 5px;
+    text-align: center;
+
+    }
+    h1{
+        color:white;
+        margin-top: 50px;
+        font-size: 80px;
+        font-weight: bold;
+    }
+    .head{
+        font-size: 45px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    .about-text{
+        text-align:justify ;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        padding: 25px;
+        }
+    .about-div{
+        text-align: center;
+        /* margin-top: 1000px; */
+        
+    }
+    .vision{
+        border: 1px solid rgb(243, 227, 227);
+        border-radius: 15px;
+        text-align: center;
+        padding: 35px;
+        width:100%;
+
+    }
+    .vision img{
+        border-radius: 50%;
+    }
+    .vision:hover {
+        background-color: aliceblue;
+    }
+    .vision img:hover{
+        border-radius: 30%;
+
+    }
+    .reviews{
+        height:100%;
+        width: 100%;
+        box-shadow: 5px 5px 20px;
+        padding:30px;
+        border-radius: 10px;
+    }
+    .reviews:hover{
+        background-color: aliceblue;
+    }
+    .loan-service{
+        margin-top: -180px;
+        padding: 80px;
+        text-align: justify;
+    }
+    .documentClass{
+        height:150%;
+        width:100%;
+        background-color:rgb(241, 238, 235);
+        border:1px dotted gray;
+        border-radius: 5px;
+    }
